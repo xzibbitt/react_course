@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import Test from "./App";
 import "./index.css";
 
 // const element = <h1 className="test">Hello World!</h1>;
@@ -13,7 +13,7 @@ import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Test />
   </React.StrictMode>,
   document.getElementById("root")
 );
