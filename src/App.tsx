@@ -1,30 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import ProductCounter from "./ProductCounter";
+import MainPage from "./containers/MainPageContainer";
+// import Registration from "./containers/RegistrationPage";
 
 const App = () => {
-  const [orangeCount, setOrangeCount] = useState(0);
-  const [appleCount, setAppleCount] = useState(0);
-
-  return (
-    <div className="App">
-      <ProductCounter
-        productName="Orange"
-        count={orangeCount}
-        setCount={setOrangeCount}
-      />
-      <ProductCounter
-        productName="Apple"
-        count={appleCount}
-        setCount={setAppleCount}
-      />
-      <ProductCounter
-        productName="Orange"
-        count={orangeCount}
-        setCount={setOrangeCount}
-      />
-    </div>
-  );
+  useEffect(() => {
+    console.log("app mount");
+  }, []);
+  // return <Registration />;
+  return <MainPage />;
 };
 
 export default App;
